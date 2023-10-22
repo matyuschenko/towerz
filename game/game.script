@@ -80,6 +80,9 @@ function init(self)
 		return vmath.matrix4_orthographic(xoffset, xoffset + projected_width, yoffset, yoffset + projected_height, near_z, far_z)
 	end)
 	camera.use_projector(CAMERA, PROJECTOR)
+
+	-- play music
+	sound.play("#bg-music")
 end
 
 function update(self, dt)
